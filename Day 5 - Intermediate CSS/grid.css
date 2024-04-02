@@ -54,7 +54,11 @@
 
 /* grid area */
 .gridItem2 {
-    /* grid-area: 2 / 1 / 2/ 3; */
+    grid-area: 2 / 1 / 2/ 3;
+}
+/* remove grid area */
+.gridItem2 {
+    grid-area: auto;
 }
 
 
