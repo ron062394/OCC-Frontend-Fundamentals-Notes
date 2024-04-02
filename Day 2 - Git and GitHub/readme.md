@@ -40,5 +40,12 @@ git checkout <commit_hash>
 git branch new_branch_name
 git checkout new_branch_name
 
+
+# adding remote origin
+git remote add origin <link>
+git branch -M main
+git push -u origin main
+
+
 # remove origin
 git remote remove origin
