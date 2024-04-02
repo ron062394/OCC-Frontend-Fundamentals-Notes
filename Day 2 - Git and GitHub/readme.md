@@ -21,6 +21,8 @@ git status
 git add .
 git commit -m "initial commit"
 
+## Checking commits
+git log
 git log --oneline
 
 # Branching
