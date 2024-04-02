@@ -54,5 +54,40 @@
 
 /* grid area */
 .gridItem2 {
-    grid-area: 3 / 1 / 3/ 3;
+    /* grid-area: 2 / 1 / 2/ 3; */
+}
+
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 767px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Query for Medium Screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Media Query for Large Screens */
+@media only screen and (min-width: 992px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .gridItem6 {
+        grid-area: 2 / 1 / 3/ 3;
+    }
+    
 }
