@@ -1,5 +1,6 @@
 # Git and GitHub
 
+```bash
 ## Checking version
 git --version
 
