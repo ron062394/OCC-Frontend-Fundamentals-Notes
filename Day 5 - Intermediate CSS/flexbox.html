@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .flexItems {
+                width: 200px;
+                margin: 10px;
+                border: 2px black solid;
+                background-color: lightblue;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .cross-axis {
+                position: absolute;
+                right: 50%;
+                height: 1080px;
+                width: 3px;
+                background-color: blue;
+            }
+
+            .main-axis {
+                position: absolute;
+                top: 50%;
+                height: 3px;
+                width: 2160px;
+                background-color: red;
+            }
+
+            .container {
+                height: 300px;
+                background-color: yellowgreen;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+        <link rel="stylesheet" href="flexbox.css"> <!-- External CSS -->
+    </head>
+    <body>
+        <div class="container flexContainer">
+            <div class="flexItems flexItem1">1</div>
+            <div class="flexItems flexItem2">2</div>
+            <div class="flexItems flexItem3">3</div>
+        
+            <!-- the axes are for discussion purposes only -->
+            <div class="axis main-axis"></div>
+            <div class="axis cross-axis"></div>
+        </div>
+    </body>
+</html>

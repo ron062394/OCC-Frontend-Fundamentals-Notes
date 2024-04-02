@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positioning Example</title>
+        <style>
+            /* Ancestor Element */
+            .ancestor {
+                position: relative;
+                border: 2px solid #000;
+                padding: 20px;
+                margin: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="selectors.css">
+    </head>
+    <body>
+        <div class="ancestor">
+            <div>This is the first line</div>
+            <div>This is the second line</div> 
+            <div class="relative">Relative Positioning</div>
+            <div class="absolute">Absolute Positioning</div>
+            <div class="fixed">Fixed Positioning</div>
+        </div>
+        <div class="sticky">Sticky Positioning</div>
+    <div style="height: 2000px;">Scroll down to see the sticky element in action.</div>
+    <br>
+    </body>
+</html>

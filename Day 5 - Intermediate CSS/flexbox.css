@@ -1,0 +1,71 @@
+/* Apply flexbox layout to the container */
+.flexContainer {
+    display: flex;
+}
+
+
+
+/* Set the flex direction to row (default) */
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Allow flex items to wrap onto multiple lines */
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Make flex items stretch to fill the container along the cross axis */
+.flexContainer {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+
+/* Flex grow - Willingness to grow */
+
+.flexItem1 {
+    flex-grow: 1; /* Takes up 1/6th of the available space */
+}
+
+.flexItem2 {
+    flex-grow: 2; /* Takes up 2/6th or 1/3rd of the available space */
+}
+
+.flexItem3 {
+    flex-grow: 3; /* Takes up 3/6th or 1/2 of the available space */
+}
+
+
+
+
+/* Flex shrink - Willingness to shrink */
+
+.flexItem1 {
+    flex-shrink: 1; /* Default behavior, willing to shrink */
+}
+
+.flexItem2 {
+    flex-shrink: 0; /* Won't shrink */
+}
+
+.flexItem3 {
+    flex-shrink: 2; /* More willing to shrink compared to others */
+}
+
+
+
+
+/* Set the initial size of flex item 3 */
+.flexItem3 {
+    flex-basis: 300px;
+}
+

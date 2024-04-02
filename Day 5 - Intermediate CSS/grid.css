@@ -1,0 +1,58 @@
+/* Using px */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 560px 500px;
+    grid-template-rows: 200px 120px;
+}
+
+/* Using auto */
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px 120px;
+}
+
+/* Using percentage */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 120px;
+}
+
+
+/* Using Fr */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 120px;
+}
+
+
+/* Shortcut */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 120px;
+}
+
+
+/* Using repeat() */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    gap: 20px;
+}
+
+
+/* Columns gap */
+.gridContainer {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+/* grid area */
+.gridItem2 {
+    grid-area: 3 / 1 / 3/ 3;
+}

@@ -1,0 +1,50 @@
+/* Element Selector */
+span {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Class Selector */
+  .class-name {
+      color: red;
+      background-color: pink;
+  }
+  
+  /* ID Selector */
+  #id-name {
+      font-weight: bold;
+  }
+  
+  /* Universal Selector */
+  * {
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Attribute Selector */
+  a[target="_blank"] {
+      text-decoration: none;
+  }
+  
+  /* Grouping Selector */
+  h1, h2, .parag {
+     color: orange;
+    
+  }
+  
+  /* Descendant Selector */
+  .ancestor p {
+      font-style: italic;
+     color: green;  
+  }
+  
+  /* Pseudo-classes */
+  a.link:hover {
+      color: red;
+  }
+  
+  /* Pseudo-element */
+  p::first-letter {
+      font-size: 150%;
+  }
+  
