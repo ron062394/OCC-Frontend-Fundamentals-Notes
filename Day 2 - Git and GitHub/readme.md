@@ -1,4 +1,5 @@
-# Git and GitHub
+# Git and GitHu
+Git is a distributed version control system that tracks changes to files, enabling collaboration among multiple users and providing mechanisms for managing code revisions efficiently.
 
 ```bash
 # Checking version
