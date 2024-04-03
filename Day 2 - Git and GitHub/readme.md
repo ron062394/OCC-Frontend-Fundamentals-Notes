@@ -64,4 +64,6 @@ git clone <remote_URL>
 #Key Points
 # Key differences: 'switch' vs 'checkout'
 #The git checkout command is a versatile command that can be used for several purposes, including switching branches, checking out specific commits, and reverting changes in the working directory.
-#The git switch command is a more focused command specifically designed for switching branches. It
+#The git switch command is a more focused command specifically designed for switching branches.
+
+```
