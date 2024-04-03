@@ -34,19 +34,34 @@ git switch new-feature
 git branch -d Edit01
 
 # Go back to previous commit
-git branch
 git log --oneline
 git branch
-git checkout <commit_hash>
+git checkout <commit_hash> 
 git branch new_branch_name
 git checkout new_branch_name
 
 
 # adding remote origin
-git remote add origin <link>
+git remote add origin <remote_URL>
 git branch -M main
 git push -u origin main
 
 
 # remove origin
 git remote remove origin
+
+
+# Push local changes to the remote repository
+git push
+
+# Pull changes from the remote repository to update the local repository
+git pull
+
+# Clone a repository from a remote URL to create a local copy
+git clone <remote_URL>
+
+
+#Key Points
+# Key differences: 'switch' vs 'checkout'
+#The git checkout command is a versatile command that can be used for several purposes, including switching branches, checking out specific commits, and reverting changes in the working directory.
+#The git switch command is a more focused command specifically designed for switching branches. It
