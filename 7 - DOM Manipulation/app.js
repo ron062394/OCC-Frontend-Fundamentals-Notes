@@ -1,82 +1,89 @@
-// Accessing Element using ID
-var elementWithID = document.getElementById('student1');
-console.log('Element accessed using ID:', elementWithID);
-// Modifying ID
-elementWithID.textContent = 'student 1 - Anna'; // Change the ID to 'new-parent'
+// Accessing Element using .getElementById() Selector
+// Return: Element and Null
 
-// Accessing Elements using Class
-var elementsWithClass = document.getElementsByClassName('section-A');
-console.log('Elements with class "section-A":', elementsWithClass);
+let elementWithID = document.getElementById("first-div");
+console.log("Element accessed using ID:", elementWithID);
 
-// Modifying class
-for (var i = 0; i < elementsWithClass.length; i++) {
-  var element = elementsWithClass[i];
-  element.textContent += ' enrolled!'; // Append 'modified-section' class
+// Modify element .textContent property
+elementWithID.textContent = "Div 1";
+
+// Accessing Elements using the .getElementByClassName() Selector
+// Return: HTML Collection
+
+let elementsWithClass = document.getElementsByClassName("sample-div");
+console.log('Elements with class "sample-div":', elementsWithClass);
+
+// Modify element .textContent property using index
+elementsWithClass[1].textContent += " 2";
+
+// Modify element .textContent property using for loop
+for (let i = 0; i < elementsWithClass.length; i++) {
+  let element = elementsWithClass[i];
+  element.textContent += " is updated!";
 }
 
+// Access Elements using .getElementByTagName() Selector
+// Return: HTML Collection
+let listItems = document.getElementsByTagName("li");
+console.log("List Items:", listItems);
 
-// Accessing Element by TagName and modifying style
-var styleElement = document.getElementsByTagName('span')[0]; // Assuming it's the 6th div in your HTML structure
-console.log('Element to modify style:', styleElement);
-styleElement.style.backgroundColor = 'lightblue'; // Modify style
+// Modify element .backgroundColor property using index
+listItems[0].style.backgroundColor = "yellow";
 
+// Modify element .textContent property using for loop
+for (let i = 0; i < listItems.length; i++) {
+  let listItem = listItems[i];
+  listItem.style.backgroundColor = "yellow";
+}
 
+// Access Element using .querySelector()
+// Return: First Element or Null
+let orderedListItem = document.querySelector(".ordered-list");
+console.log("Ordered List Items:", orderedListItem);
+orderedListItem.style.backgroundColor = "green";
 
-// Accessing first and last element child nodes
-const firstElementChild = document.getElementById('parent').firstElementChild;
-console.log('First Element Child:', firstElementChild);
-firstElementChild.textContent = 'Modified first Child'
-const lastElementChild = document.getElementById('parent').lastElementChild;
-console.log('Last Element Child:', lastElementChild);
-lastElementChild.textContent = 'Modified last Child'
+// Access Elements using .querySelectorAll()
+// Return: NodeList
+let headings = document.querySelectorAll("h3");
+console.log("Heading Tags:", headings);
 
+// Modify element .backgroundColor property using index
+headings[0].style.backgroundColor = "aqua";
 
-// Previous sibling
-var child3 = document.getElementById('child3');
-var previousSibling = child3.previousElementSibling;
-console.log('Previous Sibling:', previousSibling);
-previousSibling.style.backgroundColor = 'lightblue';
+// Modify element .backgroundColor property using for loop
+for (let i = 0; i < headings.length; i++) {
+  let heading = headings[i];
+  heading.style.backgroundColor = "aqua";
+}
 
-
-// Next sibling
-var targetChild = document.getElementById('child3');
-var nextSibling = targetChild.nextElementSibling;
-console.log('Next Sibling:', nextSibling);
-nextSibling.innerHTML = '<strong>Modified Child 4</strong>';
-
-
-
-// Adding event listener
-var button = document.getElementById('button');
-button.addEventListener('click', function() {
-    var buttonDiv = document.getElementById('buttonDiv');
-    buttonDiv.textContent = 'Hello World!';
-    alert('Button clicked!');
+// Adding Event Listeners
+let button = document.getElementById("button");
+button.addEventListener("click", function () {
+  let buttonDiv = document.getElementById("button-div");
+  alert("Button clicked!");
+  buttonDiv.textContent = "Hello World!";
 });
 
-
-// Modifying element content
-var modify = document.getElementById('modify');
-modify.textContent = 'Modified content';
-
-
-// Appending new elements
-var append = document.getElementById('append');
-var newElement = document.createElement('div');
-newElement.textContent = 'Newly Appended Element';
+// Appending New Elements
+let append = document.getElementById("append");
+let newElement = document.createElement("div");
+newElement.textContent = "Newly Appended Element";
 append.appendChild(newElement);
 
+// Removing an Element
+let elementToBeRemoved = document.getElementById("remove");
+elementToBeRemoved.remove()
 
-// Updating element attributes
-var image = document.getElementById('image');
-image.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/3688/3688129.png');
+// Updating Element Attributes
+let image = document.getElementById("image");
+image.setAttribute(
+  "src",
+  "https://cdn-icons-png.flaticon.com/512/3688/3688129.png"
+);
 
-
-
-
-// Manipulating element styles
-var style = document.getElementById('style');
-style.style.backgroundColor = 'black';
-style.style.color = 'white';
-var mode = document.getElementById('mode');
-mode.textContent = 'Dark Mode';
+// Manipulating Element Styles
+let style = document.getElementById("style");
+style.style.backgroundColor = "black";
+style.style.color = "white";
+let mode = document.getElementById("mode");
+mode.textContent = "Dark Mode";
