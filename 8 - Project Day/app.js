@@ -1,14 +1,14 @@
 // Select DOM elements
-const todoInput = document.querySelector(".todo-input"); // Access the 'todo-input'
-const todoButton = document.querySelector(".todo-button") // Access the 'todo-button'
-const todoList = document.querySelector(".todo-list") // Access the 'todo-list'
-const filterOption = document.querySelector(".filter-todo") // Access the 'filter-todo'
+const todoInput = document.querySelector(".todo-input"); // Access the 'todo-input' input tag
+const todoButton = document.querySelector(".todo-button"); // Access the 'todo-button' button tag
+const todoList = document.querySelector(".todo-list"); // Access the 'todo-list' unordered list tag
+const filterOption = document.querySelector(".filter-todo"); // Access the 'filter-todo' select tag
 
 // Event Listeners
 todoButton.addEventListener("click", addTodo); // 3. Add new task when button is clicked
 document.addEventListener("DOMContentLoaded", getTodos); // 5. Load task from the localStorage when the page is loaded
 todoList.addEventListener("click", deleteOrCompleteTodo); // 8. Delete or complete a task 
-filterOption.addEventListener("click", filterTodo) // 10. Filter tasks based on completion
+filterOption.addEventListener("click", filterTodo); // 10. Filter tasks based on completion
 
 // 1. Function to save task to the localStorage / Middleware
 function saveLocalTodos(todo) {
@@ -134,7 +134,6 @@ function deleteOrCompleteTodo(e) {
     if (item.classList[0] === "complete-btn") {
         const todo = item.parentElement;
         todo.classList.toggle("completed");
-        console.log(todo.classList[1])
     }
 
 }
