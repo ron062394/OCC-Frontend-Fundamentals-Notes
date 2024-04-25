@@ -76,10 +76,9 @@ function getTodos() {// Function to filter tasks based on completion status
   
       // Create list item for the task
       const newTodo = document.createElement("li");
-      newTodo.innerText = todo;
       newTodo.classList.add("todo-item");
+      newTodo.innerText = todo;
       todoDiv.appendChild(newTodo);
-      todoInput.value = "";
   
       // Create complete button
       const completedButton = document.createElement("button");
