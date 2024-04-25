@@ -11,9 +11,9 @@ greet();
 
 // Defining Functions with parameter
 //a, b are called parameters 
-function sum(a, b) {
+function sum(num1, num2) {
     console.log("Calculating the value...")
-    return a + b;
+    return num1 + num2;
     console.log("Calculation done!") //Muted / Cannot be reached anymore
 }
 

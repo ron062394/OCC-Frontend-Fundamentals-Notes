@@ -1,6 +1,7 @@
 // Control Flow Structures
 
-//1. Conditional statements
+//1. Conditional statements - Conditional statements allow you to execute different blocks of code based on a condition.
+
 // Conditionals: if statement
 let age = 20;
 if (age >= 18) {
@@ -37,7 +38,7 @@ switch (day) {
         break;
 }
 
-// 2. Looping statement
+// 2. Looping statement - Loops are used to repeatedly execute a block of code until a specific condition is met. They provide a way to automate repetitive tasks.
 
 // Loops: for loop
 for (let i = 1; i <= 5; i++ ) {
@@ -53,9 +54,9 @@ while (count <= 5) {
 }
 
 // Loops: do-while loop
-let i = 10;
+let counter = 10;
 do {
-    console.log('Do-while count:', i)
-    i++;
+    console.log('Do-while count:', counter)
+    counter++;
 } while (i <= 5);
 
