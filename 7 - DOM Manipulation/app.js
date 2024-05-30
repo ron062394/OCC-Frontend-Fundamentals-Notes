@@ -72,7 +72,7 @@ append.appendChild(newElement);
 
 // Removing an Element
 let elementToBeRemoved = document.getElementById("remove");
-elementToBeRemoved.remove()
+elementToBeRemoved.remove();
 
 // Updating Element Attributes
 let image = document.getElementById("image");
