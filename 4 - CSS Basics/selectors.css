@@ -35,6 +35,19 @@ h2,
 }
 
 /* Pseudo-classes */
-a.link:hover {
+/* Modify the special state of an element */
+a:link {
+  color: green;
+}
+
+a:hover {
   color: red;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: pink;
 }
