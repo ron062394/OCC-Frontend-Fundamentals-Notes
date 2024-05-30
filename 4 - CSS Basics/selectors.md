@@ -79,18 +79,21 @@ h2,
 
 /* Pseudo-classes */
 /* Modify the special state of an element */
-a:link {
-  color: green;
-}
-
 a:hover {
   color: red;
+}
+
+/* Optional */
+a:link {
+  color: green;
 }
 
 a:active {
   color: yellow;
 }
 
+/* Once you visit the page it will always be pink. */
+/* It will only be gone once you clear your browsing history. */
 a:visited {
   color: pink;
 }
