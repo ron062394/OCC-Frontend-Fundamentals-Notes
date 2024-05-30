@@ -1,11 +1,10 @@
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 .grid-container {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
-  

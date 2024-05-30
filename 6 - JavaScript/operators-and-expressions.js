@@ -1,26 +1,26 @@
 // JS Operators and expressions
 
-//1. Arithmetic Operators
+// 1. Arithmetic Operators
 let x = 21;
 let y = 10;
 
-//Addition '+'
+// Addition '+'
 let sum = x + y;
 console.log("Sum:", sum);
 
-//Substraction '-'
+// Substraction '-'
 let difference = x - y;
 console.log("Difference:", difference);
 
-//Multiplication '*'
+// Multiplication '*'
 let product = x * y;
 console.log("Product:", product);
 
-//Division '/'
+// Division '/'
 let quotient = x / y;
 console.log("Quotient:", quotient);
 
-//Remainder or Modulo '%'
+// Remainder or Modulo '%'
 let remainder = x % y;
 console.log("Remainder", remainder);
 

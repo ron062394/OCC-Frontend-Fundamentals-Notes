@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,3 +18,45 @@
     <div class="text-shadow">Adds text shadow</div>
   </body>
 </html>
+```
+
+```css
+.font-family-size {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Horizontal offset, Vertical offset, Shadow Strength, color */
+  /* negative(left) - positive(right) */
+}
+```
