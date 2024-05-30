@@ -1,10 +1,11 @@
+```html
+<!-- HTML: https://github.com/ron062394/Bootcamp-Template/blob/main/Intermediate%20CSS/centering-methods.md -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centering Methods</title>
-
     <style>
       /* Internal CSS */
       .flex-container {
@@ -28,8 +29,7 @@
         align-items: center;
       }
     </style>
-    <link rel="stylesheet" href="centering-methods.css" />
-    <!-- External CSS -->
+    <link rel="stylesheet" href="./centering-methods.css" />
   </head>
   <body>
     <div class="flex-container">
@@ -41,3 +41,17 @@
     </div>
   </body>
 </html>
+```
+
+```css
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+}
+```
