@@ -75,6 +75,7 @@
       </div>
 
       <div>
+        <!-- ONE: limited number of choices -->
         <input type="radio" name="status" id="public" value="public" />
         <label for="public">Public</label>
         <input type="radio" name="status" id="private" value="private" />
@@ -82,15 +83,18 @@
       </div>
 
       <div>
-        <input type="checkbox" name="movies" id="movies" value="movies" />
-        <label for="movies">Watching Movies</label>
-        <input
-          type="checkbox"
-          name="reading_book"
-          id="reading_book"
-          value="book"
-        />
-        <label for="reading_book">Reading a Book</label>
+        <!-- ZERO or MORE: limited number of choices -->
+        <input type="checkbox" name="action" id="action" value="action" />
+        <label for="action">Action</label>
+
+        <input type="checkbox" name="comedy" id="comedy" value="comedy" />
+        <label for="comedy">Comedy</label>
+
+        <input type="checkbox" name="drama" id="drama" value="drama" />
+        <label for="drama">Drama</label>
+
+        <input type="checkbox" name="horror" id="horror" value="horror" />
+        <label for="horror">Horror</label>
       </div>
 
       <button type="reset">Reset</button>
