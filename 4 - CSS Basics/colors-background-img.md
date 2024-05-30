@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,3 +35,43 @@
     <img src="image.jpg" alt="Example Image" class="image-sizing-example" />
   </body>
 </html>
+```
+
+```css
+/* Color Values */
+.color-example {
+  color: red;
+  background-color: #00ff00;
+}
+
+/* Background Colors and Images */
+.background-example {
+  background-color: #ff0000;
+}
+
+/* Background Positioning and Repeating */
+.background-position-example {
+  background-image: url("background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Opacity and Transparency */
+.opacity-example {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Adding Images to Web Pages */
+.image-example {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Image Sizing and Alignment */
+.image-sizing-example {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+```

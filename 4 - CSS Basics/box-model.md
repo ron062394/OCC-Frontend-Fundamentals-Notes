@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +13,7 @@
         margin-bottom: 10px;
       }
     </style>
-    <link rel="stylesheet" href="box-model.css" />
+    <link rel="stylesheet" href="./box-model.css" />
   </head>
   <body>
     <h2>Padding</h2>
@@ -43,3 +44,48 @@
     </div>
   </body>
 </html>
+```
+
+```css
+.box1 {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.box2 {
+  padding: 20px;
+}
+
+.box3 {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.box4 {
+  margin: 20px;
+}
+
+h3 {
+  width: 300px;
+  height: 120px;
+  background-color: gray;
+  padding: 6px 11px 4px 9px;
+  border: 3px solid brown;
+}
+
+.mix-borders {
+  border-style: dotted dashed solid double;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.circle-container {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+```

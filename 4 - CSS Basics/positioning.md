@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +14,7 @@
         margin: 20px;
       }
     </style>
-    <link rel="stylesheet" href="selectors.css" />
+    <link rel="stylesheet" href="./selectors.css" />
   </head>
   <body>
     <div class="ancestor">
@@ -30,3 +31,40 @@
     <br />
   </body>
 </html>
+```
+
+```css
+/* Relative Positioning */
+.relative {
+  position: relative;
+  top: 0px;
+  left: 200px;
+  background-color: #ffcc00;
+}
+
+/* Absolute Positioning */
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  background-color: #00ccff;
+}
+
+/* Fixed Positioning */
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+}
+
+/* Sticky Positioning */
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  background-color: #33cc33;
+}
+```
