@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -64,6 +65,9 @@
       <div>
         <label for="gender">Gender:</label>
         <select name="gender" id="gender">
+          <option value="none" selected disabled hidden>
+            --- Select your Gender ---
+          </option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Others">Others</option>
@@ -94,3 +98,4 @@
     </form>
   </body>
 </html>
+```
