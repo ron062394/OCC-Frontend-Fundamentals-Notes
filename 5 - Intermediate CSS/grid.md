@@ -1,3 +1,57 @@
+```html
+<!-- HTML: https://github.com/ron062394/Bootcamp-Template/blob/main/Intermediate%20CSS/grid.md -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        background-color: #e3d9c1;
+      }
+
+      .gridContainer {
+        padding: 20px;
+      }
+
+      .gridItem {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .gridItem:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <link rel="stylesheet" href="./grid.css" />
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="gridItem gridItem1">Services</div>
+      <div class="gridItem gridItem2">About us</div>
+      <div class="gridItem gridItem4">Contact Us</div>
+      <div class="gridItem gridItem4">Mission</div>
+      <div class="gridItem gridItem5">Vision</div>
+      <div class="gridItem gridItem6">Featured Product</div>
+      <div class="gridItem gridItem7">Product1</div>
+      <div class="gridItem gridItem8">Product2</div>
+      <div class="gridItem gridItem9">Product3</div>
+    </div>
+  </body>
+</html>
+```
+
+```css
 /* Using px */
 .gridContainer {
   display: grid;
@@ -100,3 +154,4 @@
     display: none;
   }
 }
+```
