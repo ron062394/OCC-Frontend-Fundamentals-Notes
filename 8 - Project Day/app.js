@@ -5,30 +5,17 @@ const todoList = document.querySelector(".todo-list"); // UL element to display 
 const filterOption = document.querySelector(".filter-todo"); // Dropdown for filtering tasks
 
 // Event Listeners
-todoButton.addEventListener("click", addTodo); // 3. Add new task when the button is clicked
+todoButton.addEventListener("click", addTodo); // 2. Add new task when the button is clicked
 document.addEventListener("DOMContentLoaded", getTodos); // 5. Load tasks from localStorage when the page is loaded
-todoList.addEventListener("click", deleteOrCompleteTodo); // 8. Delete or complete a task
+todoList.addEventListener("click", deleteOrCompleteTodo); // 7. Delete or complete a task
 filterOption.addEventListener("click", filterTodo); //10. Filter tasks based on completion status
 
-// 1. Function to save tasks to localStorage
-function saveLocalTodos(todo) {
-  let todos;
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-  }
-  todos.push(todo);
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
 
-// 2.Function to add a new task
+
+// 1.Function to add a new task
 function addTodo(e) {
   // Prevent form submission
   e.preventDefault();
-
-  // Save the task to localStorage
-  saveLocalTodos(todoInput.value);
 
   // Create a new todo div
   const todoDiv = document.createElement("div");
@@ -52,9 +39,24 @@ function addTodo(e) {
   trashButton.innerHTML = `<i class="fas fa-trash"></i>`;
   todoDiv.appendChild(trashButton);
 
+  // Save the task to localStorage
+  saveLocalTodos(todoInput.value);
+
   // Append the todo div to the todo list
   todoList.appendChild(todoDiv);
   todoInput.value = "";
+}
+
+// 3. Function to save tasks to localStorage
+function saveLocalTodos(todo) {
+    let todos;
+    if (localStorage.getItem("todos") === null) {
+      todos = [];
+    } else {
+      todos = JSON.parse(localStorage.getItem("todos"));
+    }
+    todos.push(todo);
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 // 4. Function to load tasks from localStorage when the page is loaded
@@ -94,25 +96,8 @@ function getTodos() {
   });
 }
 
-// 6. Function to remove the task from the localStorage
-function removeLocalTodos(todo) {
-  let todos;
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
-  }
 
-  // todo element / div container have 3 children (task, complete button, delete button)
-  // children[0] = "Task content"
-  const task = todo.children[0].innerText;
-  const todoIndex = todos.indexOf(task);
-  todos.splice(todoIndex, 1);
-
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
-
-// 7. Function to delete or complete task
+// 6. Function to delete or complete task
 function deleteOrCompleteTodo(e) {
   const item = e.target;
 
@@ -121,6 +106,8 @@ function deleteOrCompleteTodo(e) {
     const todo = item.parentElement;
     todo.classList.add("fall");
     console.log(todo);
+
+    //Call remove local todo here
     removeLocalTodos(todo);
 
     todo.addEventListener("transitionend", (e) => {
@@ -134,6 +121,27 @@ function deleteOrCompleteTodo(e) {
     todo.classList.toggle("completed");
   }
 }
+
+
+// 8. Function to remove the task from the localStorage
+function removeLocalTodos(todo) {
+    let todos;
+    if (localStorage.getItem("todos") === null) {
+      todos = [];
+    } else {
+      todos = JSON.parse(localStorage.getItem("todos"));
+    }
+  
+    // todo element / div container have 3 children (task, complete button, delete button)
+    // children[0] = "Task content"
+    const task = todo.children[0].innerText;
+    const todoIndex = todos.indexOf(task);
+    todos.splice(todoIndex, 1);
+  
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+  
+
 
 // 9. Function to filter task based on completion status
 function filterTodo(e) {

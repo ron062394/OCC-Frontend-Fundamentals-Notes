@@ -9,7 +9,6 @@ function greet() {
 greet();
 
 // Defining Functions with parameter
-//a, b are called parameters
 function sum(num1, num2) {
   console.log("Calculating the value...");
   return num1 + num2;
