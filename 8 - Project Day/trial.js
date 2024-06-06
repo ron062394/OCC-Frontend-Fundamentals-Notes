@@ -47,9 +47,6 @@ function addTodo(e) {
   todoInput.value = "";
 }
 
-// Step 3: Function to save tasks to localStorage
-// Middleware - a web server is middleware that connects websites to the backend database.
-// Metaphor: You should buy the ingredients first before you start to cook the dish.
 /*
     How to access the local storage
     1. Right click the browser
@@ -58,6 +55,10 @@ function addTodo(e) {
     4. Storage
     5. Local Storage
 */
+
+// Step 3: Function to save tasks to localStorage
+// Middleware - a web server is middleware that connects websites to the backend database.
+// Metaphor: You should buy the ingredients first before you start to cook the dish.
 
 // The argument that is passed to the todo parameter is the actual textual data.
 function saveLocalTodos(todo) {
