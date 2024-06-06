@@ -6,19 +6,19 @@ const filterOption = document.querySelector(".filter-todo"); // Dropdown for fil
 
 // Create event listeners for each button.
 todoButton.addEventListener("click", addTodo); // Step 2: Add new task when the button is clicked
+document.addEventListener("DOMContentLoaded", getTodos); // Step 5: Load tasks from localStorage when the page is loaded
 todoList.addEventListener("click", deleteOrCompleteTodo); // Step 7: Delete or complete a task
 filterOption.addEventListener("change", filterTodo); // Step 10: Filter tasks based on completion status
-// DO NOT ADD THIS YET
-document.addEventListener("DOMContentLoaded", getTodos); // Step 5: Load tasks from localStorage when the page is loaded
 
 // Step 1: Function to add a new task
 function addTodo(e) {
   // Prevent form submission
   e.preventDefault();
 
-  // DO NOT ADD THIS YET
+  // ****** DO NOT ADD THIS YET ******
   // Save the task to localStorage
   saveLocalTodos(todoInput.value);
+  // *********************************
 
   // Create a new todo div
   const todoDiv = document.createElement("div");
@@ -47,9 +47,6 @@ function addTodo(e) {
   todoInput.value = "";
 }
 
-// Step 3: Function to save tasks to localStorage
-// Middleware - a web server is middleware that connects websites to the backend database.
-// Metaphor: You should buy the ingredients first before you start to cook the dish.
 /*
     How to access the local storage
     1. Right click the browser
@@ -58,6 +55,10 @@ function addTodo(e) {
     4. Storage
     5. Local Storage
 */
+
+// Step 3: Function to save tasks to localStorage
+// Middleware - a web server is middleware that connects websites to the backend database.
+// Metaphor: You should buy the ingredients first before you start to cook the dish.
 
 // The argument that is passed to the todo parameter is the actual textual data.
 function saveLocalTodos(todo) {
@@ -72,7 +73,7 @@ function saveLocalTodos(todo) {
 }
 
 /*
-  // Add this to the addTodo()
+  // ****** Add this to the addTodo() ******
 
   // Save the task to localStorage
   saveLocalTodos(todoInput.value);
@@ -80,7 +81,6 @@ function saveLocalTodos(todo) {
 
 // Step 4: Function to load tasks from localStorage when the page is loaded
 function getTodos() {
-  // Function to filter tasks based on completion status
   let todos;
   if (localStorage.getItem("todos") === null) {
     todos = [];
@@ -116,8 +116,9 @@ function getTodos() {
 }
 
 /*  
-    // Add this to the Event Listener Section
-    document.addEventListener("DOMContentLoaded", getTodos); // // Step 5: Load tasks from localStorage when the page is loaded
+    // ****** Add this to the Event Listener Section ******
+    
+    document.addEventListener("DOMContentLoaded", getTodos); // Step 5: Load tasks from localStorage when the page is loaded
 */
 
 // Step 6: Function to delete or complete task
@@ -128,8 +129,10 @@ function deleteOrCompleteTodo(e) {
     const todo = item.parentElement;
     todo.classList.add("fall");
 
-    // DO NOT ADD THIS YET
+    // ****** DO NOT ADD THIS YET ******
+    // Delete the task from localStorage
     removeLocalTodos(todo);
+    // *********************************
 
     todo.addEventListener("transitionend", function () {
       todo.remove();
@@ -163,7 +166,7 @@ function removeLocalTodos(todo) {
 }
 
 /*  
-    // Add this to the deleteOrCompleteTodo()
+    // ****** Add this to the deleteOrCompleteTodo() ******
 
     // Remove task from localStorage
     removeLocalTodos(todo);
