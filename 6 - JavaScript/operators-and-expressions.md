@@ -1,3 +1,4 @@
+```javascript
 // JS Operators and expressions
 
 // 1. Arithmetic Operators
@@ -44,16 +45,6 @@ console.log("5 != 5:", 5 != 5); // false
 console.log("5 != '5':", 5 != "5"); // false (converts string to number)
 console.log("'hello' != 'world':", "hello" != "world"); // true
 
-// Strict equal to (===): This operator checks if two values are equal in both value and type.
-console.log("5 === 5:", 5 === 5); // true
-console.log("5 === '5':", 5 === "5"); // false (different types)
-console.log("'hello' === 'world':", "hello" === "world"); // false
-
-// Strict not equal to (!==): This operator checks if two values are not equal in value or type.
-console.log("5 !== 5:", 5 !== 5); // false
-console.log("5 !== '5':", 5 !== "5"); // true (different types)
-console.log("'hello' !== 'world':", "hello" !== "world"); // true
-
 // Greater than (>): This operator checks if the left operand is greater than the right operand.
 console.log("5 > 3:", 5 > 3); // true
 console.log("3 > 5:", 3 > 5); // false
@@ -79,6 +70,20 @@ console.log("Is it sunny AND warm?", sunny && warm);
 console.log("Is it sunny OR warm?", sunny || warm);
 console.log("NOT sunny?", !sunny);
 
+```
+OPTIONAL:
+```javascript
+// 3. Comparison Operators
+// Strict equal to (===): This operator checks if two values are equal in both value and type.
+console.log("5 === 5:", 5 === 5); // true
+console.log("5 === '5':", 5 === "5"); // false (different types)
+console.log("'hello' === 'world':", "hello" === "world"); // false
+
+// Strict not equal to (!==): This operator checks if two values are not equal in value or type.
+console.log("5 !== 5:", 5 !== 5); // false
+console.log("5 !== '5':", 5 !== "5"); // true (different types)
+console.log("'hello' !== 'world':", "hello" !== "world"); // true
+
 // 5. Assignment expressions
 let a = 10;
 let b = 5;
@@ -94,3 +99,4 @@ console.log("The new value of a is:", a);
 
 a /= b;
 console.log("The new value of a is:", a);
+```
