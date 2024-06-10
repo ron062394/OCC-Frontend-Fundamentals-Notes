@@ -1,3 +1,4 @@
+```javascript
 console.log("Hello World!");
 
 // Statements: JavaScript code is composed of statements that perform specific actions. Each statement typically ends with a semicolon (;), although it is not always required.
@@ -25,3 +26,4 @@ if (true) {
 const birthdate = "06232000";
 console.log(birthdate);
 // birthdate = "000000";
+```

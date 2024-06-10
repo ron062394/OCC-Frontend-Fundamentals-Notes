@@ -1,3 +1,4 @@
+```javascript
 // Control Flow Structures
 
 // 1. Conditional Statements - allow you to execute different blocks of code based on a condition.
@@ -51,3 +52,4 @@ do {
   console.log("Do-while count:", counter);
   counter++;
 } while (i <= 5);
+```

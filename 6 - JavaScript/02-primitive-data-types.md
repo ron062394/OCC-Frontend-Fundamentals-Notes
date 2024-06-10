@@ -1,3 +1,4 @@
+```javascript
 // Data Types - Primitive data types
 
 // Number: Represents numeric va;ue e.g. -12, 45, 1.5
@@ -25,3 +26,4 @@ console.log("The type of car is:", typeof car);
 let city;
 console.log("The value of city is:", city);
 console.log("The type of city is:", typeof city);
+```

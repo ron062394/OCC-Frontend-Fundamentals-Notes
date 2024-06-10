@@ -1,3 +1,4 @@
+```javascript
 // Functions allows us to write reusable block of codes that can executed whenever needed
 
 // Defining a function
@@ -18,3 +19,4 @@ function sum(num1, num2) {
 // Calling Functions with parameter
 // The value that we are passing is called argument
 console.log(sum(5, 8));
+```

@@ -1,3 +1,4 @@
+```javascript
 // Arrays and Array methods
 // Array - allows us to store multiple values in a single variable
 
@@ -55,3 +56,4 @@ console.log("Sliced array:", slicedArray);
 let removedElements = numbers.splice(2, 3);
 console.log("Removed elements:", removedElements);
 console.log("Updated array:", numbers);
+```
