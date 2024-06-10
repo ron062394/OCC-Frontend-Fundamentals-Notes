@@ -1,6 +1,7 @@
-//Functions allows us to write reusable block of codes that can executed whenever needed
+```javascript
+// Functions allows us to write reusable block of codes that can executed whenever needed
 
-//Defining a function
+// Defining a function
 function greet() {
   console.log("Hello, welcome to the world of functions!");
   console.log("Yehey!");
@@ -16,5 +17,6 @@ function sum(num1, num2) {
 }
 
 // Calling Functions with parameter
-//The value that we are passing is called argument
+// The value that we are passing is called argument
 console.log(sum(5, 8));
+```
