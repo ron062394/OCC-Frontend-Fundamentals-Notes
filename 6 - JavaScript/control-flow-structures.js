@@ -1,28 +1,22 @@
 // Control Flow Structures
 
-//1. Conditional statements - Conditional statements allow you to execute different blocks of code based on a condition.
+// 1. Conditional Statements - allow you to execute different blocks of code based on a condition.
 
-// Conditionals: if statement
-let age = 20;
-if (age >= 18) {
-  console.log("You are eligible to vote!");
-} else {
-  console.log("You are not eligible to vote!");
-}
-
-//Conditionals: if-else Statement
-let temperature = 30;
+// Conditionals: if, else if, else statements
+// Use: Complex conditions
+let temperature = 25;
 if (temperature < 0) {
-  console.log("It is freezing!");
+  console.log("It's freezing!");
 } else if (temperature >= 0 && temperature < 20) {
-  console.log("It is cool outside!");
+  console.log("It's cool outside.");
+} else if (temperature >= 20 && temperature < 30) {
+  console.log("It's warm outside.");
 } else {
-  console.log("It is a warm day!");
-  console.log("It is a warm day!");
-  console.log("It is a warm day!");
+  console.log("It's hot outside.");
 }
 
-//Conditionals: switch Statement
+// Conditionals: switch-case statements
+// Use: Checking for exact value
 let day = "Monday";
 switch (day) {
   case "Monday":
@@ -36,7 +30,8 @@ switch (day) {
     break;
 }
 
-// 2. Looping statement - Loops are used to repeatedly execute a block of code until a specific condition is met. They provide a way to automate repetitive tasks.
+// 2. Looping Statements - are used to repeatedly execute a block of code until a specific condition is met. 
+// They provide a way to automate repetitive tasks.
 
 // Loops: for loop
 for (let i = 1; i <= 5; i++) {
