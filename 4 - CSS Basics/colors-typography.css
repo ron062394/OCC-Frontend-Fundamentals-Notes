@@ -1,0 +1,68 @@
+.font-family-size {
+  font-family: "Arial", sans-serif;
+  /* Predefined/Cross-browser Color Names */
+  /* 140 color names are predefined in the HTML and CSS color specification. */
+  color: crimson;
+}
+
+.bold {
+  font-weight: bold;
+  /* #RRGGBB, where the RR (red), GG (green) and BB (blue) */
+  /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F */
+  color: #ff6347;
+}
+
+.italic {
+  font-style: italic;
+  /* #RRGGBBTT, where the RR (red), GG (green) and BB (blue) */
+  /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F */
+  color: #ff000080; /* red transparency */
+  color: #00ff0080; /* green transparency */
+  color: #0000ff80; /* green transparency */
+}
+
+.underline {
+  text-decoration: underline;
+  /* rgb(red, green, blue) */
+  color: rgb(26, 11, 30);
+  /* rgba(red, green, blue, alpha) */
+  background-color: rgba(199, 9, 237, 0.608);
+}
+
+.center-align {
+  text-align: center;
+  /* hsl(hue, saturation, lightness) */
+  /* hue - 0 to 360 - [0 (or 360) is red] [120 is green] [240 is blue] */
+  /* saturation(percentage) - 0 is shade of gray - 100 is full color */
+  /* lightness(percentage) - 0 is black - 100 is white */
+  background-color: hsl(60, 100%, 50%);
+  /* hsla(hue, saturation, lightness, alpha) */
+  /* 0.0 (fully transparent) and 1.0 (fully opaque) */
+  color: hsl(0, 100%, 50%);
+}
+
+.line-through {
+  font-size: 18px; /* Absolute Width */
+  text-decoration: line-through;
+}
+
+.line-height {
+  font-size: 80%; /* Relative to the parent container */
+  line-height: 1.5;
+}
+
+.letter-spacing {
+  /* Relative to the parent container */
+  /* 1em - 100% of the font-size of the parent */
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.text-shadow {
+  /* Relative to the font-size of the root(16px) */
+  /* 1rem = 16px */
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Horizontal offset, Vertical offset, Shadow Strength, color */
+  /* negative(left) - positive(right) */
+}
