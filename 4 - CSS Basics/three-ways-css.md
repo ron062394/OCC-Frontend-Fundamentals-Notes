@@ -17,9 +17,7 @@
   </head>
   <body>
     <!-- Inline Styling -->
-    <p style="color: green; font-size: 16px">
-      This is a paragraph with inline styling.
-    </p>
+    <p style="color: green; font-size: 16px"> This is a paragraph with inline styling.</p>
 
     <!-- Internal Styling -->
     <p class="internal-styling">This is a paragraph with internal styling.</p>
