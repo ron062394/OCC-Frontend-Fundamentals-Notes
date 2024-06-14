@@ -82,8 +82,15 @@ h2,
 a:hover {
   color: red;
 }
+```
+Optional:
+```css
+/* Attribute Selector */
+a[target="_blank"] {
+  background-color: yellow;
+}
 
-/* Optional */
+/* Pseudo-classes */
 a:link {
   color: green;
 }
@@ -95,6 +102,6 @@ a:active {
 /* Once you visit the page it will always be pink. */
 /* It will only be gone once you clear your browsing history. */
 a:visited {
-  color: pink;
+  color: pink; 
 }
 ```
