@@ -7,15 +7,17 @@
     <title>Creating Forms</title>
   </head>
   <body>
+    <!-- Form is used to collect user input -->
     <h1>Creating Forms</h1>
     <form action="">
       <div>
         <!-- Name -->
+        <!-- for="#element-id" -->
         <label for="name">Name: </label>
         <input
           type="text"
-          name="name"
-          id="name"
+          name="user-fullname"
+          id="fullname-id"
           placeholder="John Doe"
           required
         />
@@ -26,8 +28,8 @@
         <label for="email">Email: </label>
         <input
           type="email"
-          name="email"
-          id="email"
+          name="user-email"
+          id="email-id"
           placeholder="john.doe@gmail.com"
           required
         />
@@ -38,8 +40,8 @@
         <label for="password">Password: </label>
         <input
           type="password"
-          name="password"
-          id="password"
+          name="user-password"
+          id="password-id"
           placeholder="*********"
           required
         />
@@ -48,23 +50,32 @@
       <div>
         <!-- Number -->
         <label for="age">Age: </label>
-        <input type="number" name="age" id="age" placeholder="30" required />
+        <input
+          type="number"
+          name="user-age"
+          id="age-id"
+          placeholder="30"
+          required
+          min="18"
+          max="100"
+        />
       </div>
 
       <label for="message">Message: </label>
       <div>
         <textarea
-          name="message"
-          id="message"
+          name="user-message"
+          id="message-id"
           cols="30"
           rows="5"
-          placeholder="Lorem ipsum dolor sit amet consectetur."
+          placeholder="This is a message."
         ></textarea>
       </div>
 
       <div>
-        <label for="gender">Gender:</label>
-        <select name="gender" id="gender">
+        <!-- Defines a drop-down list -->
+        <label for="gender-id">Gender:</label>
+        <select name="user-gender" id="gender-id">
           <option value="none" selected disabled hidden>
             --- Select your Gender ---
           </option>
@@ -76,25 +87,25 @@
 
       <div>
         <!-- ONE: limited number of choices -->
-        <input type="radio" name="status" id="public" value="public" />
-        <label for="public">Public</label>
-        <input type="radio" name="status" id="private" value="private" />
-        <label for="private">Private</label>
+        <input type="radio" name="profile-status" id="public-id" value="public" />
+        <label for="public-id">Public</label>
+        <input type="radio" name="profile-status" id="private-id" value="private" />
+        <label for="private-id">Private</label>
       </div>
 
       <div>
         <!-- ZERO or MORE: limited number of choices -->
-        <input type="checkbox" name="action" id="action" value="action" />
-        <label for="action">Action</label>
+        <input type="checkbox" name="action-genre" id="action-id" value="action" />
+        <label for="action-id">Action</label>
 
-        <input type="checkbox" name="comedy" id="comedy" value="comedy" />
-        <label for="comedy">Comedy</label>
+        <input type="checkbox" name="comedy-genre" id="comedy-id" value="comedy" />
+        <label for="comedy-id">Comedy</label>
 
-        <input type="checkbox" name="drama" id="drama" value="drama" />
-        <label for="drama">Drama</label>
+        <input type="checkbox" name="drama-genre" id="drama-id" value="drama" />
+        <label for="drama-id">Drama</label>
 
-        <input type="checkbox" name="horror" id="horror" value="horror" />
-        <label for="horror">Horror</label>
+        <input type="checkbox" name="horror-genre" id="horror-id" value="horror" />
+        <label for="horror-id">Horror</label>
       </div>
 
       <button type="reset">Reset</button>
