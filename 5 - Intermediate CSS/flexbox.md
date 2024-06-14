@@ -7,36 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flexbox</title>
     <style>
+      .container {
+        height: 400px;
+        background-color: #a8dadc;
+        position: relative;
+        overflow: hidden;
+      }
+
       .flexItems {
         width: 200px;
         margin: 10px;
-        border: 2px black solid;
-        background-color: lightblue;
+        border: 6px #457b9d solid;
+        border-radius: 12px;
+        background-color: #f1faee;
         text-align: center;
-        justify-content: center;
+        font-size: 40px;
       }
 
       .cross-axis {
         position: absolute;
         right: 50%;
         height: 1080px;
-        width: 3px;
-        background-color: blue;
+        width: 6px;
+        background-color: #e63946;
       }
 
       .main-axis {
         position: absolute;
         top: 50%;
-        height: 3px;
+        height: 6px;
         width: 2160px;
-        background-color: red;
-      }
-
-      .container {
-        height: 300px;
-        background-color: yellowgreen;
-        position: relative;
-        overflow: hidden;
+        background-color: #1d3557;
       }
     </style>
     <link rel="stylesheet" href="./flexbox.css" />
@@ -47,7 +48,7 @@
       <div class="flexItems flexItem2">2</div>
       <div class="flexItems flexItem3">3</div>
 
-      <!-- the axes are for discussion purposes only -->
+      <!-- The axes are for discussion purposes only -->
       <div class="axis main-axis"></div>
       <div class="axis cross-axis"></div>
     </div>

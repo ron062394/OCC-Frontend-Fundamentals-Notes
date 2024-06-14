@@ -38,18 +38,18 @@ git branch -d [branch-name]
 # Go back to previous commit
 git log --oneline
 git branch
-git checkout <commit_hash> 
+git checkout [commit_hash] 
 git branch new_branch_name
 git checkout new_branch_name
 
 
-# adding remote origin
-git remote add origin <remote_URL>
+# Adding remote origin
+git remote add origin [remote_URL]
 git branch -M main
 git push -u origin main
 
 
-# remove origin
+# Remove origin
 git remote remove origin
 
 
@@ -60,7 +60,7 @@ git push
 git pull
 
 # Clone a repository from a remote URL to create a local copy
-git clone <remote_URL>
+git clone [remote_URL]
 
 
 # Key Points
