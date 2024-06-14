@@ -86,6 +86,12 @@ a:hover {
 Optional:
 ```css
 /* Attribute Selector */
+
+/*
+  Add in HTML:
+  <a href="http://www.google.com" target="_blank">Google</a>
+*/
+
 a[target="_blank"] {
   background-color: yellow;
 }
