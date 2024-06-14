@@ -1,26 +1,30 @@
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding, Margin and Border</title>
+    <link rel="stylesheet" href="./box-model.css">
     <style>
-      /* Inline Styles */
+      /* Internal Styles */
       .box {
         background-color: #02474d;
         height: 100px;
         width: 150px;
         color: white;
         font-weight: bolder;
-        margin-bottom: 10px;
       }
     </style>
-    <link rel="stylesheet" href="./box-model.css" />
   </head>
+
   <body>
     <h2>Padding</h2>
     <div class="box box1">
       <p>This uses padding.</p>
     </div>
 
+    <h2>Padding Shorthand</h2>
     <div class="box box2">
       <p>This uses the padding shorthand.</p>
     </div>
@@ -30,6 +34,7 @@
       <p class="parag1">This uses margin.</p>
     </div>
 
+    <h2>Margin Shorthand</h2>
     <div class="box box4">
       <p class="parag2">This uses the margin shorthand.</p>
     </div>
@@ -39,6 +44,7 @@
       <p class="my-parag">This is a paragraph.</p>
     </div>
 
+    <h2>Circle Container</h2>
     <div class="circle-container">
       <h2>Hi!</h2>
     </div>
