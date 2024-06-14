@@ -82,8 +82,21 @@ h2,
 a:hover {
   color: red;
 }
+```
+Optional:
+```css
+/* Attribute Selector */
 
-/* Optional */
+/*
+  Add in HTML:
+  <a href="http://www.google.com" target="_blank">Google</a>
+*/
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+/* Pseudo-classes */
 a:link {
   color: green;
 }
@@ -95,6 +108,6 @@ a:active {
 /* Once you visit the page it will always be pink. */
 /* It will only be gone once you clear your browsing history. */
 a:visited {
-  color: pink;
+  color: pink; 
 }
 ```

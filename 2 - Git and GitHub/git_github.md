@@ -14,7 +14,6 @@ git config user.email
 # Checking commands
 git config -h or git help config
 
-
 # Initializing Repository
 git init
 
@@ -27,27 +26,30 @@ git commit -m "initial commit"
 git log
 git log --oneline
 
-# Branching
-git branch new-feature
-git branch
-git switch new-feature
-git branch -d Edit01
+# Branching & Merging
+git branch [branch-name]
+git branch -a
+git switch [branch-name]
+# Create commits.
+git switch [branch-name]
+git merge [branch-name]
+git branch -d [branch-name]
 
 # Go back to previous commit
 git log --oneline
 git branch
-git checkout <commit_hash> 
+git checkout [commit_hash] 
 git branch new_branch_name
 git checkout new_branch_name
 
 
-# adding remote origin
-git remote add origin <remote_URL>
+# Adding remote origin
+git remote add origin [remote_URL]
 git branch -M main
 git push -u origin main
 
 
-# remove origin
+# Remove origin
 git remote remove origin
 
 
@@ -58,12 +60,11 @@ git push
 git pull
 
 # Clone a repository from a remote URL to create a local copy
-git clone <remote_URL>
+git clone [remote_URL]
 
 
 # Key Points
 # Key differences: 'switch' vs 'checkout'
 # The git checkout command is a versatile command that can be used for several purposes, including switching branches, checking out specific commits, and reverting changes in the working directory.
 # The git switch command is a more focused command specifically designed for switching branches.
-
 ```
