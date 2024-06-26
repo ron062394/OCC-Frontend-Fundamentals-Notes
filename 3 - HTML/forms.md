@@ -87,24 +87,34 @@
 
       <div>
         <!-- ONE: limited number of choices -->
-        <input type="radio" name="profile-status" id="public-id" value="public" />
+        <input
+          type="radio"
+          name="profile-status"
+          id="public-id"
+          value="public"
+        />
         <label for="public-id">Public</label>
-        <input type="radio" name="profile-status" id="private-id" value="private" />
+        <input
+          type="radio"
+          name="profile-status"
+          id="private-id"
+          value="private"
+        />
         <label for="private-id">Private</label>
       </div>
 
       <div>
         <!-- ZERO or MORE: limited number of choices -->
-        <input type="checkbox" name="action-genre" id="action-id" value="action" />
+        <input type="checkbox" name="genre" id="action-id" value="action" />
         <label for="action-id">Action</label>
 
-        <input type="checkbox" name="comedy-genre" id="comedy-id" value="comedy" />
+        <input type="checkbox" name="genre" id="comedy-id" value="comedy" />
         <label for="comedy-id">Comedy</label>
 
-        <input type="checkbox" name="drama-genre" id="drama-id" value="drama" />
+        <input type="checkbox" name="genre" id="drama-id" value="drama" />
         <label for="drama-id">Drama</label>
 
-        <input type="checkbox" name="horror-genre" id="horror-id" value="horror" />
+        <input type="checkbox" name="genre" id="horror-id" value="horror" />
         <label for="horror-id">Horror</label>
       </div>
 
