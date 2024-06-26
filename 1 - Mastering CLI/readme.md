@@ -4,6 +4,9 @@ It is a text-based interface used to interact with a computer system or program 
 CLI is commonly used by developers, system administrators, and power users for its efficiency and flexibility in performing tasks.
 
 ```bash
+# Graphical User Interface (GUI): Graphical Components: Icons/Buttons/Menus
+# Command-line Interface (CLI): Text-Based: Manage and Interact with Computer Files
+
 # Change directory
 cd /path/to/directory
 cd ..
@@ -18,17 +21,16 @@ pwd
 # Create a new directory
 mkdir new_directory
 
+# Remove directory
+rmdir directory_name
+
 # Create a new file
-touch new_file.txt
+touch file_name
 
-# Remove a file / directory_folder
-rm file.txt 
-rmdir directory_folder
-
-
-# Create a directory
-mkdir directory_name
-
+# Remove a file
+rm file_name
+```
+```bash
 # Rename a file or directory
 mv old_name new_name
 
