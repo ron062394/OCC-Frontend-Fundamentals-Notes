@@ -75,7 +75,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #000000;
+  background: tomato;
   color: white;
   border: none;
   padding: 1rem;
@@ -84,7 +84,7 @@ form button:hover {
 }
 
 .complete-btn {
-  background-color: #000000;
+  background-color: #2fff9e;
 }
 
 .todo-item {
@@ -129,12 +129,14 @@ select {
   position: relative;
   overflow: hidden;
 }
+
 select {
   color: #000000;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
 }
+
 /* Arrow */
 .select::after {
   content: "\25BC";

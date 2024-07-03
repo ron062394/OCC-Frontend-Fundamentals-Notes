@@ -142,6 +142,7 @@ function deleteOrCompleteTodo(e) {
   // If the complete button is clicked, toggle the completed class
   if (item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
+    // toggle() - Add if not existing, remove if existing.
     todo.classList.toggle("completed");
   }
 }
