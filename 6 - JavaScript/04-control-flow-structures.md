@@ -28,20 +28,19 @@ switch (day) {
     break;
   default:
     console.log("It is a regular day.");
-    break;
 }
 
 // 2. Looping Statements - are used to repeatedly execute a block of code until a specific condition is met. 
 // They provide a way to automate repetitive tasks.
 
 // Loops: for loop
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 3; i++) {
   console.log("for loop count:", i);
 }
 
-//Loops: while loop
+// Loops: while loop
 let count = 1;
-while (count <= 5) {
+while (count <= 3) {
   console.log("while loop count:", count);
   count++;
 }
@@ -51,5 +50,5 @@ let counter = 10;
 do {
   console.log("Do-while count:", counter);
   counter++;
-} while (i <= 5);
+} while (i <= 3);
 ```

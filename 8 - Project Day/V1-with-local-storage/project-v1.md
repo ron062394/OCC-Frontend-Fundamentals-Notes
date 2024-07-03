@@ -1,3 +1,10 @@
+```
+HTML: https://github.com/ron062394/OCC-Frontend-Fundamentals/blob/main/DOM%20Project/html.md
+```
+```
+CSS: https://github.com/ron062394/OCC-Frontend-Fundamentals/blob/main/DOM%20Project/css.md
+```
+```javascript
 // Select DOM elements
 const todoInput = document.querySelector(".todo-input"); // Input field for adding new tasks
 const todoButton = document.querySelector(".todo-button"); // Button to add new tasks
@@ -142,6 +149,7 @@ function deleteOrCompleteTodo(e) {
   // If the complete button is clicked, toggle the completed class
   if (item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
+    // toggle() - Add if not existing, remove if existing.
     todo.classList.toggle("completed");
   }
 }
@@ -193,7 +201,7 @@ function filterTodo(e) {
         } else {
           todo.style.display = "none";
         }
-        break;
     }
   });
 }
+```

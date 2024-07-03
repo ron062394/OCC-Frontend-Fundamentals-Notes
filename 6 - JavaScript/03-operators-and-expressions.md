@@ -1,32 +1,24 @@
 ```javascript
-// JS Operators and expressions
+// Operators and Expressions
 
 // 1. Arithmetic Operators
-let x = 21;
-let y = 10;
+let num1 = 10;
+let num2 = 5;
 
-// Addition '+'
-let sum = x + y;
-console.log("Sum:", sum);
+console.log("Addition (+):", num1 + num2);
+console.log("Subtraction (-):", num1 - num2);
+console.log("Multiplication (*):", num1 * num2);
+console.log("Division (/):", num1 / num2);
+console.log("Exponent (**):", num1 ** num2);
+console.log("Remainder (%):", num1 % num2);
 
-// Substraction '-'
-let difference = x - y;
-console.log("Difference:", difference);
+// Order of Operations
+// PEMDAS / BODMAS
+// BODMAS - Bracket, Order, Division, Multiplication, Addition, and Subtraction
+// PEMDAS - Parentheses, Exponents, Multiplication and Division (same level), and Addition and Subtraction (same level)
 
-// Multiplication '*'
-let product = x * y;
-console.log("Product:", product);
-
-// Division '/'
-let quotient = x / y;
-console.log("Quotient:", quotient);
-
-// Remainder or Modulo '%'
-let remainder = x % y;
-console.log("Remainder", remainder);
-
-let answer = ((10 / 2) * 23) / 2;
-console.log(answer);
+let answer = 3 + 4 * (5 - 2) ** 2 / 2;
+console.log("Answer:", answer); // 21
 
 // 2. String Expressions or concatenation
 console.log("Hello" + " " + "World!");
@@ -35,68 +27,74 @@ let myName = "John";
 console.log(greeting + " " + myName + ".");
 
 // 3. Comparison Operators
-// Equal to (==): This operator checks if two values are equal.
-console.log("5 == 5:", 5 == 5); // true
-console.log("5 == '5':", 5 == "5"); // true (converts string "5" to number)
-console.log("'hello' == 'world':", "hello" == "world"); // false
+// type coercion (convert types if necessary)
+// Equal to '==' : Checks if two values are equal
+console.log("Equal to (==):", 5 == 5);
+console.log("Equal to (==) with type coercion:", 5 == '5');
+// Not Equal to '!=' : Checks if two values are not equal
+console.log("Not Equal to (!=):", 5 =! 5);
+console.log("Not Equal to (!=) with type coercion:", 5 =! '5');
+// Strict equal to '===': Checks if two values are equal in value and type
+console.log("Strict Equal to (===):", 5 === 5);
+console.log("Strict Equal to (===):", 5 === '5');
+// Strict not equal to '!==': Checks if two values are not equal in value or type
+console.log("Strict Not Equal to (!==):", 5 !== 5);
+console.log("Strict Not Equal to (!==):", 5 !== '5');
 
-// Not equal to (!=): This operator checks if two values are not equal.
-console.log("5 != 5:", 5 != 5); // false
-console.log("5 != '5':", 5 != "5"); // false (converts string to number)
-console.log("'hello' != 'world':", "hello" != "world"); // true
+console.log("Greater Than (>):", 5 > 3);
+console.log("Less Than (<):", 3 < 5);
+console.log("Greater Than or Equal To (>=):", 5 >= 3);
+console.log("Less Than or Equal To (<=):", 3 <= 5);
 
-// Greater than (>): This operator checks if the left operand is greater than the right operand.
-console.log("5 > 3:", 5 > 3); // true
-console.log("3 > 5:", 3 > 5); // false
+// 4. Logical Operators
+// && - AND - Amphersand
+// || - OR - Pipe
+// ! - NOT - Exclamation Mark
 
-// Less than (<): This operator checks if the left operand is less than the right operand.
-console.log("5 < 3:", 5 < 3); // false
-console.log("3 < 5:", 3 < 5); // true
-
-// Greater than or equal to (>=): This operator checks if the left operand is greater than or equal to the right operand.
-console.log("5 >= 5:", 5 >= 5); // true
-console.log("5 >= 3:", 5 >= 3); // true
-console.log("3 >= 5:", 3 >= 5); // false
-
-// Less than or equal to (<=): This operator checks if the left operand is less than or equal to the right operand.
-console.log("5 <= 5:", 5 <= 5); // true
-console.log("5 <= 3:", 5 <= 3); // false
-console.log("3 <= 5:", 3 <= 5); // true
-
-// 4. Logical expressions (&&, ||, !)
 let sunny = true;
-let warm = true;
+let warm = false;
+
+// AND: True only if all conditions are met
 console.log("Is it sunny AND warm?", sunny && warm);
+
+// OR: True if at least one condition is met
 console.log("Is it sunny OR warm?", sunny || warm);
+
+// NOT: Inverts the boolean value
 console.log("NOT sunny?", !sunny);
 
-```
-OPTIONAL:
-```javascript
-// 3. Comparison Operators
-// Strict equal to (===): This operator checks if two values are equal in both value and type.
-console.log("5 === 5:", 5 === 5); // true
-console.log("5 === '5':", 5 === "5"); // false (different types)
-console.log("'hello' === 'world':", "hello" === "world"); // false
+// 5. Assignment Expressions
+// Assigning a value to a variable
+let num3 = 10;
+let num4 = 5;
 
-// Strict not equal to (!==): This operator checks if two values are not equal in value or type.
-console.log("5 !== 5:", 5 !== 5); // false
-console.log("5 !== '5':", 5 !== "5"); // true (different types)
-console.log("'hello' !== 'world':", "hello" !== "world"); // true
+// Addition Assignment '+='
+// Computation: 10 + 5 = 15
+num3 += num4;
+console.log("The new value of a is:", num3);
 
-// 5. Assignment expressions
-let a = 10;
-let b = 5;
+// Subtraction Assignment '-='
+// Computation: 15 - 5 = 10
+num3 -= num4;
+console.log("The new value of a is:", num3);
 
-a += b;
-console.log("The new value of a is:", a);
+// Multiplication Assignment '*='
+// Computation: 10 * 5 = 50
+num3 *= num4;
+console.log("The new value of a is:", num3);
 
-a -= b;
-console.log("The new value of a is:", a);
+// Division Assignment '/='
+// Computation: 50 / 5 = 10
+num3 /= num4;
+console.log("The new value of a is:", num3);
 
-a *= b;
-console.log("The new value of a is:", a);
+// Exponent Assignment '**='
+// Computation: 10 ** 5 = 100,000
+num3 **= num4;
+console.log("The new value of a is:", num3);
 
-a /= b;
-console.log("The new value of a is:", a);
+// Remainder Assignment '%='
+// Computation: 100,000 % 5 = 0
+num3 %= num4;
+console.log("The new value of a is:", num3);
 ```
