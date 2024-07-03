@@ -1,5 +1,8 @@
+### SEND TEMPLATE LINK TO ZOOM CHAT
+```
+HTML: https://github.com/ron062394/Bootcamp-Template/blob/main/Intermediate%20CSS/centering-methods.md
+```
 ```html
-<!-- HTML: https://github.com/ron062394/Bootcamp-Template/blob/main/Intermediate%20CSS/centering-methods.md -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
