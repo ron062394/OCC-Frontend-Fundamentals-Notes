@@ -1,5 +1,5 @@
 ```
-HTML: https://github.com/ron062394/Bootcamp-Template/blob/main/DOM/dom-trial.md
+HTML: https://github.com/ron062394/OCC-Frontend-Fundamentals/blob/main/DOM/dom.md
 ```
 ```html
 <!DOCTYPE html>
