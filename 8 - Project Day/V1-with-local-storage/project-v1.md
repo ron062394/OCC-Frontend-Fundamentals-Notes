@@ -1,3 +1,10 @@
+```
+HTML: https://github.com/ron062394/OCC-Frontend-Fundamentals/blob/main/DOM%20Project/html.md
+```
+```
+CSS: https://github.com/ron062394/OCC-Frontend-Fundamentals/blob/main/DOM%20Project/css.md
+```
+```javascript
 // Select DOM elements
 const todoInput = document.querySelector(".todo-input"); // Input field for adding new tasks
 const todoButton = document.querySelector(".todo-button"); // Button to add new tasks
@@ -194,7 +201,7 @@ function filterTodo(e) {
         } else {
           todo.style.display = "none";
         }
-        break;
     }
   });
 }
+```
