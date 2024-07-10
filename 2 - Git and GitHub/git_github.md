@@ -17,10 +17,24 @@ git config -h or git help config
 # Initializing Repository
 git init
 
+# Initializing & committing Empty Repository 
+git commit --allow-empty -m "Initial commit"
+
 # Checking Status of Repository
 git status
+
+# Adding a single file to staging area
+git add <file>
+
+# Adding multiple file to staging area
 git add .
-git commit -m "initial commit"
+
+# Removing a single file to staging area
+git restore --staged notes.txt
+git restore --staged .
+
+# Adding files to commited area
+git commit -m "Adding commits"
 
 # Checking commits
 git log
