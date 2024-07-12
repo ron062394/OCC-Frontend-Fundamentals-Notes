@@ -81,7 +81,7 @@ git checkout new_branch_name
 git reset --hard [commit_hash]
 ```
 
-### Method 3(recommended)
+### Method 3 (recommended)
 ```bash
 git revert [commit_hash]
 ```
