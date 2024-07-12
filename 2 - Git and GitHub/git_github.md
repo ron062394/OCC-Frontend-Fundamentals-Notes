@@ -49,6 +49,7 @@ git switch [branch-name]
 git merge [branch-name]
 git branch -d [branch-name]
 
+#Method 1
 # Go back to previous commit
 git log --oneline
 git branch
@@ -56,6 +57,11 @@ git checkout [commit_hash]
 git branch new_branch_name
 git checkout new_branch_name
 
+#Method 2
+git reset --hard [commit_hash]
+
+#Method 3(recommended)
+git revert <commit_hash>
 
 # Adding remote origin
 git remote add origin [remote_URL]
