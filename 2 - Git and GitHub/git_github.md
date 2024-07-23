@@ -2,7 +2,9 @@
 Git is a distributed version control system that tracks changes to files, enabling collaboration among multiple users and providing mechanisms for managing code revisions efficiently.
 
 ## Checking version
-`git --version`
+```bash
+git --version
+```
 
 ## Configuring User and Email 
 ```bash
