@@ -40,12 +40,12 @@
 
     <!-- This text is being ignored. -->
     <!-- h1 to h6 -->
-    <h1>This is a header - h1</h1>
-    <h2>This is a header - h2</h2>
-    <h3>This is a header - h3</h3>
-    <h4>This is a header - h4</h4>
-    <h5>This is a header - h5</h5>
-    <h6>This is a header - h6</h6>
+    <h1>Heading 1 , Title</h1>
+    <h2>Heading 2, Major Headings</h2>
+    <h3>Heading 3, Subheadings</h3>
+    <h4>Heading 4, 4th Level Subheadings</h4>
+    <h5>Heading 5, 5th Level Subheadings</h5>
+    <h6>Heading 6, 6th Level Subheadings</h6>
     <br /><br />
 
     <h2>This is horizontal Rule</h2>
