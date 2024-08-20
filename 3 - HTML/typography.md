@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>HTML</h1>
-    <p>HTML (HyperText Markup Language) is the fundamental language used to create and structure content on the web. It uses a system of tags to define elements like headings, paragraphs, links, and images, enabling browsers to display web pages with organized and formatted content.</p>
+    <p>HTML, or HyperText Markup Language, is the standard language used to create and design web pages. It structures content on the web by using various elements and tags.</p>
     <br /><br />
 
     <h2>This is a sample header</h2>
